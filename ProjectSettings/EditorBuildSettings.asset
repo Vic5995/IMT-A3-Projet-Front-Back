@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/main_scene.unity
+    guid: 62a7004482ccc2c43ad4446a180bd1ca
+  - enabled: 1
+    path: Assets/Scenes/preparation_scene.unity
+    guid: f2fe79bc736d82b49a9b0d370c22083d
+  - enabled: 1
+    path: Assets/Scenes/MRI_operation_scene.unity
+    guid: e75b2cbcc613023409c58b554f323848
+  - enabled: 1
+    path: Assets/Scenes/MRI_preparation_scene.unity
+    guid: 0f994b433384ae142a3c86b7071a22a0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
