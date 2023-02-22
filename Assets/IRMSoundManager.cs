@@ -8,6 +8,7 @@ public class IRMSoundManager : MonoBehaviour
     private GameObject patient = null;
     private bool playerSitDown = false;
 
+
     [SerializeField] private AudioSource irmSoundEffect;
     [SerializeField] private AudioSource compresseurSoundEffect;
 

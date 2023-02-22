@@ -18,6 +18,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        animator.SetBool("isMoving", false);
         // characterController = GetComponent<CharacterController>();
         //originalStepOffset = characterController.stepOffset;
     }
@@ -66,16 +67,15 @@ public class Movement : MonoBehaviour
 
         //characterController.Move(velocity * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetButtonDown("XRI_Left_TriggerButton"))
         {
-            Debug.Log("RightArrow");
-            Debug.Log(animator);
+            Debug.Log("Trigger Pressed");
             animator.SetBool("isMoving", true);
            /* Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);*/
         }
-        else
+        else if (Input.GetButtonUp("XRI_Left_TriggerButton"))
         {
             animator.SetBool("isMoving", false);
         }
